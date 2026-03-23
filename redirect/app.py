@@ -177,7 +177,7 @@ class AppHandler(BaseHTTPRequestHandler):
             if not is_same_origin(submitted_link):
                 result_html = """
                 <div class="card">
-                  <p class="error">This link is not same-origin, so I cannot open it.</p>
+                  <p class="error">This link is cross-origin, so I cannot open it.</p>
                 </div>
                 """
             else:
